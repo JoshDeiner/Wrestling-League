@@ -30,7 +30,12 @@ const styles = theme => ({
 class ScrollableTabsButtonAuto extends React.Component {
   state = {
     value: 0,
+    loggedin: false
   };
+
+  toggedLogin = () => {
+    this.setState({ loggedin: !this.state.loggedin })
+  }
 
   handleChange = (event, value) => {
     this.setState({ value });
@@ -53,14 +58,15 @@ class ScrollableTabsButtonAuto extends React.Component {
           >
           <Link to='/'><Tab label="Home" /></Link>
 
-            <Link to='/standings'><Tab label="Choose Team" /></Link>
+            <Link to='/teams'><Tab label="Choose Team" /></Link>
             <Tab label="Choose Team" />
             <Tab label="IND League" />
             <Tab label="Allstar League" />
             <Tab label="Contest" />
-            <Tab label="Standings" />
+            <Link to='/standings'><Tab label="Standings" /></Link>
+
             <Tab label="Profile" />
-            <Tab label=" Logout " />
+            { this.state.loggedin ? <Tab label=" Login " /> : <Tab label=" Logout " /> }
           </Tabs>
         </AppBar>
 
