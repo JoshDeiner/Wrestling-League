@@ -6,9 +6,10 @@ import Standings from '../containers/standings/first'
 import Main from '../containers/main/page.js'
 import Teams from '../containers/standings/TeamScore.js'
 import ErrorPage from '../EdgeCases/404.js'
-
+import SigninForm from '../components/auth/SigninForm'
 import '../stylesheets/App.css';
 
+console.log('env',process);
 class App extends Component {
 
   state = {
@@ -31,6 +32,8 @@ class App extends Component {
           <Route exact path='/' render = { () => <Main /> } />
           <Route exact path='/standings' render = { () => <Standings /> } />
           <Route exact path='/teams' render = { () => <Teams /> } />
+          <Route exact path='/login' render = { () => <Teams /> } />
+
 
         </Switch>
         {this.state.routes.includes(this.props.location.pathname) ? null : <ErrorPage />}
