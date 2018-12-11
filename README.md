@@ -3,8 +3,6 @@
 To implement
 
 Create fantasy wrestling league. 
-Implement frank’s stuff. Use pop up page, flow navigation, route navigation. 
-Responsiveness and css principles
 
 Use scraping to pick out teams. 
 Allow usability for people to create all star leagues. T
@@ -13,3 +11,8 @@ his would be a jumple of players mashed from each team. People can choose up to 
 Auth 
 
 Two different divisions. One division cannot compete with the other
+
+order to do:
+establish auth 
+scrape for teams
+enabe user crud
