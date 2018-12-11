@@ -15,4 +15,4 @@ Two different divisions. One division cannot compete with the other
 order to do:
 establish auth 
 scrape for teams
-enabe user crud
+enabe user crud via seed data
