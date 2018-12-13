@@ -66,7 +66,7 @@ class ScrollableTabsButtonAuto extends React.Component {
             <Link to='/standings'><Tab label="Standings" /></Link>
 
             <Tab label="Profile" />
-            { this.state.loggedin ? <Tab label=" Logout " /> : <Tab label=" Login " />  }
+            { this.state.loggedin ? <Tab label=" Logout " /> : <Link to='/login'> <Tab label=" Login " /> </Link>   }
           </Tabs>
         </AppBar>
 

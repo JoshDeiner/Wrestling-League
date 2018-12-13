@@ -13,7 +13,7 @@ console.log('env',process);
 class App extends Component {
 
   state = {
-    routes: [ '/', '/standings', '/teams' ]
+    routes: [ '/', '/standings', '/teams', '/login' ]
   }
 
   checkRoutes = () => {
@@ -32,7 +32,7 @@ class App extends Component {
           <Route exact path='/' render = { () => <Main /> } />
           <Route exact path='/standings' render = { () => <Standings /> } />
           <Route exact path='/teams' render = { () => <Teams /> } />
-          <Route exact path='/login' render = { () => <Teams /> } />
+          <Route exact path='/login' render = { () => <SigninForm /> } />
 
 
         </Switch>
